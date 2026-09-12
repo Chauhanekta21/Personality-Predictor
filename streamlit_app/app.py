@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
 
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "Data" / "personality_dataset.csv"
+DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "personality_dataset.csv"
 EXCLUDED_FEATURES = {"personality_type", "emotional_stability", "stress_handling", "creativity"}
 FEATURE_GROUPS = {
     "Social Profile": [
