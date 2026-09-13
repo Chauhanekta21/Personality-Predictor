@@ -14,13 +14,13 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
 ## 📈 View Project:
 
-🔹 **Try the interactive predictor App:** Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
+🔹 **Personality Predictor Live App:** Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
 
-**Link:** [Explore the Streamlit app](streamlit_app/app.py)
+**Link:** [personality-predictor-streamlit-app](https://personality-predictor-pp.streamlit.app/)
 
-🔹 **Follow the full analysis:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
+🔹 **Jupyter Notebook:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
 
-**Link:** [Read the Jupyter notebook](jupyter_notebook/personality_predictor.ipynb)
+**Link:** [personality-predictor-jupyter-notebook](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/jupyter_notebook/personality_predictor.ipynb)
 
 ## 📈 Project Workflow
 
