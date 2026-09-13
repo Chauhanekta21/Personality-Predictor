@@ -2,7 +2,7 @@
 
 > **Project Status: Completed**
 
-## 🔹 Project Overview
+## 📈 Project Overview
 
 This project uses machine learning to predict a person's personality type from their answers to questions about their habits, preferences, and behaviour. The prediction can be one of three types:
 
@@ -14,8 +14,15 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
 ## 📈 View Project:
 
+🔹 **Try the interactive predictor App:** Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
 
-## Project Workflow
+**Link:** [Explore the Streamlit app](streamlit_app/app.py)
+
+🔹 **Follow the full analysis:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
+
+**Link:** [Read the Jupyter notebook](jupyter_notebook/personality_predictor.ipynb)
+
+## 📈 Project Workflow
 
 The project follows these steps:
 
@@ -28,7 +35,7 @@ The project follows these steps:
 7. Use the trained model to predict a personality type from new answers.
 8. Display the prediction in the Streamlit app.
 
-## Dataset Information
+## 📈 Dataset Information
 
 The included dataset contains:
 
@@ -56,7 +63,7 @@ The target column is `personality_type`, which contains the classes `Introvert`,
 
 
 
-## Tools and Libraries
+## 📈 Tools and Libraries
 
 - Python
 - Jupyter Notebook
@@ -66,7 +73,7 @@ The target column is `personality_type`, which contains the classes `Introvert`,
 - Scikit-learn for label encoding and logistic regression
 - Streamlit for the interactive web app
 
-## Repository Structure
+## 📈 Repository Structure
 
 ```text
 Personality_Predictor/
@@ -81,14 +88,7 @@ Personality_Predictor/
 `-- README.md
 ```
 
-## Important Notes
-
-- The app trains the model when it starts; a separate saved model file is not required.
-- The app uses the dataset at `data/personality_dataset.csv`.
-- The prediction is only an educational machine learning result. It is not a clinical diagnosis or a professional psychological assessment.
-- The app uses the answers provided by the user, so different answers can produce different predictions.
-
-## Skills Demonstrated
+## 📈 Skills Demonstrated
 
 - Exploratory data analysis
 - Data inspection and preprocessing
@@ -99,7 +99,7 @@ Personality_Predictor/
 - Data visualization
 - Building an interactive Streamlit application
 
-## Author
+## 📈 Author
 
 **Ekta Singh Chauhan**
 
@@ -114,6 +114,6 @@ Focused on building projects in:
 - Data Analytics
 - Machine Learning
 
-## Disclaimer
+## 📈 Disclaimer
 
 This project is for educational and portfolio purposes only. The prediction should not be used as a medical, clinical, or professional psychological assessment.
