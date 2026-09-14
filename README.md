@@ -4,6 +4,8 @@
 
 ![data](images/thumbnail.png)
 
+---
+
 ## 📈 Project Overview
 
 This project uses machine learning to predict a person's personality type from their answers to questions about their habits, preferences, and behaviour. The prediction can be one of three types:
@@ -13,6 +15,8 @@ This project uses machine learning to predict a person's personality type from t
 - Extrovert
 
 The project includes a Jupyter Notebook for learning and analysis, along with a Streamlit app that lets users try the personality predictor through a simple web interface.
+
+---
 
 ## 📈 View Project:
 
@@ -37,6 +41,7 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
   ![data](images/jupyter.png)
 
+  ---
 
 ## 📈 Project Workflow
 
@@ -62,6 +67,8 @@ Model Evaluation
 Streamlit App
 ```
 
+---
+
 ## 📈 Dataset Information
 
 - The included dataset contains:
@@ -77,6 +84,7 @@ Streamlit App
 
   ![data](images/data.png)
 
+---
 
 ## 📈 Key Steps & Results
 
@@ -85,6 +93,8 @@ Streamlit App
 - Loaded the personality dataset from the data folder.
 
   ![data](images/data_import.png)
+
+<hr>
 
 ### 🔹 Data Inspection
 
@@ -107,11 +117,13 @@ Streamlit App
 
   ![data](images/feature.png)
 
+<hr>
 
 ### 🔹 Data Cleaning & Transformation
 
 - No major cleaning was required as the dataset contained no missing or duplicate values.
 
+<hr>
 
 ### 🔹 Feature Selection with ANOVA
 
@@ -125,12 +137,15 @@ Streamlit App
 
   ![data](images/f_selection.png)
 
+<hr>
 
 ### 🔹 Target Encoding
 
 - Encoded the categorical personality_type target using LabelEncoder.
 
   ![data](images/encoding.png)
+
+<hr>
 
 ### 🔹 Split X and y features.
 
@@ -141,12 +156,15 @@ Streamlit App
 
   ![data](images/split.png)
 
+<hr>
 
 ### 🔹 Model Training
 
 - Created and trained a Logistic Regression classification model using the training data.
 
   ![data](images/tarining.png)
+
+<hr>
 
 ### 🔹 Model Evaluation
 
@@ -164,6 +182,7 @@ Evaluated the trained model using:
   ![data](images/accuracy.png)
 
 
+---
 
 ## 📈 Tools and Libraries
 
@@ -174,6 +193,8 @@ Evaluated the trained model using:
 - Matplotlib and Seaborn for visualizations in the notebook
 - Scikit-learn for label encoding and logistic regression
 - Streamlit for the interactive web app
+
+---
 
 ## 📈 Repository Structure
 
@@ -193,6 +214,8 @@ Personality_Predictor/
 `-- README.md
 ```
 
+---
+
 ## 📈 Skills Demonstrated
 
 - Exploratory data analysis
@@ -203,6 +226,8 @@ Personality_Predictor/
 - Train/test splitting
 - Data visualization
 - Building an interactive Streamlit application
+
+---
 
 ## 📈 Author
 
@@ -218,6 +243,8 @@ Focused on building projects in:
 - Power BI
 - Data Analytics
 - Machine Learning
+
+---
 
 ## 📈 Disclaimer
 
