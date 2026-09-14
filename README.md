@@ -2,6 +2,8 @@
 
 > **Project Status: Completed**
 
+![data](thumbnail.png)
+
 ## 📈 Project Overview
 
 This project uses machine learning to predict a person's personality type from their answers to questions about their habits, preferences, and behaviour. The prediction can be one of three types:
@@ -14,26 +16,46 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
 ## 📈 View Project:
 
-🔹 **Try the interactive predictor App:** Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
+🔹 **Personality Predictor Live App:** Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
 
-**Link:** [Explore the Streamlit app](streamlit_app/app.py)
+**Link:** [personality-predictor-streamlit-app](https://personality-predictor-pp.streamlit.app/)
 
-🔹 **Follow the full analysis:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
+**Personality Predictor App Preview:**
 
-**Link:** [Read the Jupyter notebook](jupyter_notebook/personality_predictor.ipynb)
+![data](app.png)
+
+🔹 **Jupyter Notebook:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
+
+**Link:** [personality-predictor-jupyter-notebook](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/jupyter_notebook/personality_predictor.ipynb)
+
+**Jupyter Notebook Preview:**
+
+![data](jupyter.png)
+
 
 ## 📈 Project Workflow
 
-The project follows these steps:
-
-1. Load the personality dataset from the `data` folder.
-2. Explore the dataset in the Jupyter Notebook.
-3. Separate the personality label from the input features.
-4. Convert the text personality labels into numbers with `LabelEncoder`.
-5. Split the data into training and testing sets in the notebook.
-6. Train a `LogisticRegression` classification model.
-7. Use the trained model to predict a personality type from new answers.
-8. Display the prediction in the Streamlit app.
+```text
+Raw Dataset
+     ↓
+Data Import
+     ↓
+Data Inspection
+     ↓
+Data Cleaning & Transformation
+     ↓
+Feature & Target Separation
+     ↓
+Label Encoding
+     ↓
+Train-Test Split
+     ↓
+Logistic Regression Model Training
+     ↓
+Model Evaluation
+     ↓
+Streamlit App
+```
 
 ## 📈 Dataset Information
 
@@ -41,25 +63,102 @@ The included dataset contains:
 
 - 20,000 records
 - 30 columns
-- 1 target column: `personality_type`
+- 1 target column: `personality_type`, which contains the classes `Introvert`, `Ambivert`, and `Extrovert`.
 - Numerical features describing social behaviour, thinking style, lifestyle, and preferences
 
-Some example features are:
+**Link:** [personality-dataset](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/data/personality_dataset.csv)
 
-- `social_energy`
-- `alone_time_preference`
-- `talkativeness`
-- `deep_reflection`
-- `group_comfort`
-- `empathy`
-- `organization`
-- `leadership`
-- `risk_taking`
-- `public_speaking_comfort`
-- `routine_preference`
-- `travel_desire`
+**Dataset Preview:**
 
-The target column is `personality_type`, which contains the classes `Introvert`, `Ambivert`, and `Extrovert`.
+![data](data.png)
+
+
+## 📈 Key Steps & Results
+
+🔹 Data Import
+
+Loaded the personality dataset from the data folder.
+
+![data](data_import.png)
+
+🔹 Data Inspection
+
+Checked the dataset for missing values and duplicate records.
+
+- Null values: None
+
+- Duplicate records: None
+
+- **Personality Type Distribution:** Countplot shows that the personality classes are well balanced.
+
+![data](personality.png)
+
+- **Social Energy Distribution:** Histogram shows the distribution of social energy scores, while the KDE curve shows the overall distribution trend.
+
+![data](social.png)
+
+
+- **Feature Relationships:** Pair plot was used to see relationships between talkativeness, empathy, creativity, and personality_type.
+
+![data](feature.png)
+
+
+🔹 Data Cleaning & Transformation
+
+No major cleaning was required as the dataset contained no missing or duplicate values.
+
+
+🔹 Feature Selection with ANOVA
+
+Used ANOVA to identify features that have a statistically significant relationship with the target.
+
+Three features had p-values ≥ 0.05 and were excluded from model training:
+
+- emotional_stability
+- stress_handling
+- creativity
+
+The remaining features were retained for training.
+
+![data](f_selection.png)
+
+
+🔹 Target Encoding
+
+Encoded the categorical personality_type target using LabelEncoder.
+
+![data](encoding.png)
+
+🔹 Split X and y features.
+
+Separated the dataset into:
+
+X: Input features
+y: Target (personality_type)
+
+![data](split.png)
+
+
+🔹 Model Training
+
+Created and trained a Logistic Regression classification model using the training data.
+
+![data](tarining.png)
+
+🔹 Model Evaluation
+
+Evaluated the trained model using:
+
+- **Confusion Matrix —** to see correct and incorrect predictions for each personality type.
+
+![data](matrix.png)
+
+- **Accuracy Score —** to measure the overall percentage of correct predictions.
+
+- **Classification Report —** to evaluate precision, recall, and F1-score for each personality type.
+
+
+![data](accuracy.png)
 
 
 
