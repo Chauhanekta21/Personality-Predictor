@@ -30,6 +30,7 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
    ![data](images/app.png)
 
+<hr>
 
 ### 🔹 **Jupyter Notebook:** 
 
@@ -41,7 +42,7 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
   ![data](images/jupyter.png)
 
-  ---
+---
 
 ## 📈 Project Workflow
 
@@ -78,7 +79,7 @@ Streamlit App
      - 1 target column: `personality_type`, which contains the classes `Introvert`, `Ambivert`, and `Extrovert`.
      - Numerical features describing social behaviour, thinking style, lifestyle, and preferences
 
-- **Link:** [personality-dataset](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/data/personality_dataset.csv)
+- **Link:** [personality-dataset-link](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/data/personality_dataset.csv)
 
 - **Dataset Preview:**
 
@@ -162,7 +163,7 @@ Streamlit App
 
 - Created and trained a Logistic Regression classification model using the training data.
 
-  ![data](images/tarining.png)
+  ![data](images/training.png)
 
 <hr>
 
