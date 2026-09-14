@@ -16,21 +16,26 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
 ## 📈 View Project:
 
-🔹 **Personality Predictor Live App:** Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
+### 🔹 **Personality Predictor Live App:** 
 
-**Link:** [personality-predictor-streamlit-app](https://personality-predictor-pp.streamlit.app/)
+- Answer behavioural questions and see machine learning turn your responses into a personality prediction. 
 
-**Personality Predictor App Preview:**
+- **Link:** [personality-predictor-streamlit-app](https://personality-predictor-pp.streamlit.app/)
 
-![data](images/app.png)
+- **Personality Predictor App Preview:**
 
-🔹 **Jupyter Notebook:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
+   ![data](images/app.png)
 
-**Link:** [personality-predictor-jupyter-notebook](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/jupyter_notebook/personality_predictor.ipynb)
 
-**Jupyter Notebook Preview:**
+### 🔹 **Jupyter Notebook:** 
 
-![data](images/jupyter.png)
+- See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
+
+- **Link:** [personality-predictor-jupyter-notebook](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/jupyter_notebook/personality_predictor.ipynb)
+
+- **Jupyter Notebook Preview:**
+
+  ![data](images/jupyter.png)
 
 
 ## 📈 Project Workflow
@@ -59,106 +64,104 @@ Streamlit App
 
 ## 📈 Dataset Information
 
-The included dataset contains:
+- The included dataset contains:
 
-- 20,000 records
-- 30 columns
-- 1 target column: `personality_type`, which contains the classes `Introvert`, `Ambivert`, and `Extrovert`.
-- Numerical features describing social behaviour, thinking style, lifestyle, and preferences
+     - 20,000 records
+     - 30 columns
+     - 1 target column: `personality_type`, which contains the classes `Introvert`, `Ambivert`, and `Extrovert`.
+     - Numerical features describing social behaviour, thinking style, lifestyle, and preferences
 
-**Link:** [personality-dataset](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/data/personality_dataset.csv)
+- **Link:** [personality-dataset](https://github.com/Chauhanekta21/Personality-Predictor/blob/main/data/personality_dataset.csv)
 
-**Dataset Preview:**
+- **Dataset Preview:**
 
-![data](images/data.png)
+  ![data](images/data.png)
 
 
 ## 📈 Key Steps & Results
 
-🔹 Data Import
+### 🔹 Data Import
 
-Loaded the personality dataset from the data folder.
+- Loaded the personality dataset from the data folder.
 
-![data](images/data_import.png)
+  ![data](images/data_import.png)
 
-🔹 Data Inspection
+### 🔹 Data Inspection
 
-Checked the dataset for missing values and duplicate records.
+- Checked the dataset for missing values and duplicate records.
 
-- Null values: None
+     - Null values: None
 
-- Duplicate records: None
+     - Duplicate records: None
 
 - **Personality Type Distribution:** Countplot shows that the personality classes are well balanced.
 
-![data](images/personality.png)
+  ![data](images/personality_type.png)
 
-- **Social Energy Distribution:** Histogram shows the distribution of social energy scores, while the KDE curve shows the overall distribution trend.
+- **Social Energy Distribution:** Histogram shows the distribution of social energy scores, while the KDE curve shows the overall                                           distribution trend.
 
-![data](images/social.png)
+  ![data](images/social.png)
 
 
 - **Feature Relationships:** Pair plot was used to see relationships between talkativeness, empathy, creativity, and personality_type.
 
-![data](images/feature.png)
+  ![data](images/feature.png)
 
 
-🔹 Data Cleaning & Transformation
+### 🔹 Data Cleaning & Transformation
 
-No major cleaning was required as the dataset contained no missing or duplicate values.
-
-
-🔹 Feature Selection with ANOVA
-
-Used ANOVA to identify features that have a statistically significant relationship with the target.
-
-Three features had p-values ≥ 0.05 and were excluded from model training:
-
-- emotional_stability
-- stress_handling
-- creativity
-
-The remaining features were retained for training.
-
-![data](images/f_selection.png)
+- No major cleaning was required as the dataset contained no missing or duplicate values.
 
 
-🔹 Target Encoding
+### 🔹 Feature Selection with ANOVA
 
-Encoded the categorical personality_type target using LabelEncoder.
+- Used ANOVA to identify features that have a statistically significant relationship with the target. Three features had p-values ≥ 0.05    and were excluded from model training:
 
-![data](images/encoding.png)
+     - emotional_stability
+     - stress_handling
+     - creativity
 
-🔹 Split X and y features.
+- The remaining features were retained for training.
 
-Separated the dataset into:
-
-X: Input features
-y: Target (personality_type)
-
-![data](images/split.png)
+  ![data](images/f_selection.png)
 
 
-🔹 Model Training
+### 🔹 Target Encoding
 
-Created and trained a Logistic Regression classification model using the training data.
+- Encoded the categorical personality_type target using LabelEncoder.
 
-![data](images/tarining.png)
+  ![data](images/encoding.png)
 
-🔹 Model Evaluation
+### 🔹 Split X and y features.
+
+- Separated the dataset into:
+
+     - X: Input features
+     - y: Target (personality_type)
+
+  ![data](images/split.png)
+
+
+### 🔹 Model Training
+
+- Created and trained a Logistic Regression classification model using the training data.
+
+  ![data](images/tarining.png)
+
+### 🔹 Model Evaluation
 
 Evaluated the trained model using:
 
 - **Confusion Matrix —** to see correct and incorrect predictions for each personality type.
 
-![data](images/matrix.png)
+  ![data](images/matrix.png)
 
 - **Accuracy Score —** to measure the overall percentage of correct predictions.
 
 - **Classification Report —** to evaluate precision, recall, and F1-score for each personality type.
 
 
-![data](images/accuracy.png)
+  ![data](images/accuracy.png)
 
 
 
