@@ -2,7 +2,7 @@
 
 > **Project Status: Completed**
 
-![data](thumbnail.png)
+![data](images/thumbnail.png)
 
 ## 📈 Project Overview
 
@@ -22,7 +22,7 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
 **Personality Predictor App Preview:**
 
-![data](app.png)
+![data](images/app.png)
 
 🔹 **Jupyter Notebook:** See how raw data becomes a working prediction model through exploration, preprocessing, feature selection, and logistic regression. 
 
@@ -30,7 +30,7 @@ The project includes a Jupyter Notebook for learning and analysis, along with a 
 
 **Jupyter Notebook Preview:**
 
-![data](jupyter.png)
+![data](images/jupyter.png)
 
 
 ## 📈 Project Workflow
@@ -70,7 +70,7 @@ The included dataset contains:
 
 **Dataset Preview:**
 
-![data](data.png)
+![data](images/data.png)
 
 
 ## 📈 Key Steps & Results
@@ -79,7 +79,7 @@ The included dataset contains:
 
 Loaded the personality dataset from the data folder.
 
-![data](data_import.png)
+![data](images/data_import.png)
 
 🔹 Data Inspection
 
@@ -91,16 +91,16 @@ Checked the dataset for missing values and duplicate records.
 
 - **Personality Type Distribution:** Countplot shows that the personality classes are well balanced.
 
-![data](personality.png)
+![data](images/personality.png)
 
 - **Social Energy Distribution:** Histogram shows the distribution of social energy scores, while the KDE curve shows the overall distribution trend.
 
-![data](social.png)
+![data](images/social.png)
 
 
 - **Feature Relationships:** Pair plot was used to see relationships between talkativeness, empathy, creativity, and personality_type.
 
-![data](feature.png)
+![data](images/feature.png)
 
 
 🔹 Data Cleaning & Transformation
@@ -120,14 +120,14 @@ Three features had p-values ≥ 0.05 and were excluded from model training:
 
 The remaining features were retained for training.
 
-![data](f_selection.png)
+![data](images/f_selection.png)
 
 
 🔹 Target Encoding
 
 Encoded the categorical personality_type target using LabelEncoder.
 
-![data](encoding.png)
+![data](images/encoding.png)
 
 🔹 Split X and y features.
 
@@ -136,14 +136,14 @@ Separated the dataset into:
 X: Input features
 y: Target (personality_type)
 
-![data](split.png)
+![data](images/split.png)
 
 
 🔹 Model Training
 
 Created and trained a Logistic Regression classification model using the training data.
 
-![data](tarining.png)
+![data](images/tarining.png)
 
 🔹 Model Evaluation
 
@@ -151,14 +151,14 @@ Evaluated the trained model using:
 
 - **Confusion Matrix —** to see correct and incorrect predictions for each personality type.
 
-![data](matrix.png)
+![data](images/matrix.png)
 
 - **Accuracy Score —** to measure the overall percentage of correct predictions.
 
 - **Classification Report —** to evaluate precision, recall, and F1-score for each personality type.
 
 
-![data](accuracy.png)
+![data](images/accuracy.png)
 
 
 
@@ -178,11 +178,14 @@ Evaluated the trained model using:
 Personality_Predictor/
 |-- data/
 |   `-- personality_dataset.csv
+|-- images/
+|   `-- 14 PNG files
 |-- jupyter_notebook/
 |   `-- personality_predictor.ipynb
 |-- streamlit_app/
 |   |-- app.py
 |   `-- requirements.txt
+|-- .gitattributes
 |-- .gitignore
 `-- README.md
 ```
